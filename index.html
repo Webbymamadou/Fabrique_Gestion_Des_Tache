@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gestion des tâches</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Gestion des tâches - Simplon Sénégal</h1>
+  </header>
+
+  <main class="content">
+
+    <!-- FORMULAIRE -->
+    <fieldset>
+      <h2>Formulaire d’ajout</h2>
+
+      <div class="form">
+
+        <input type="text" id="titre" placeholder="Titre" required>
+
+        <input type="text" id="descript" placeholder="Description" required>
+
+        <input type="date" id="date_limite" required>
+
+        <input type="text" id="statut" placeholder="Statut" required>
+
+        <select id="priorite" required>
+          <option value="faible">Faible</option>
+          <option value="moyenne">Moyenne</option>
+          <option value="forte">Forte</option>
+        </select>
+
+        <button id="btnAjouter" type="button">Ajouter</button>
+
+      </div>
+    </fieldset>
+
+    <div id="liste">
+
+      <h2>Liste des tâches</h2>
+
+      <p>Aucune tâche pour le moment...</p>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
